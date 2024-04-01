@@ -1,0 +1,69 @@
+{
+  "name": "vscode-auto-extension-manager",
+  "displayName": "vscode-auto-extension-manager",
+  "description": "Automatically manage your VSCode extensions ✨",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/selemondev/vscode-auto-extension-manager"
+  },
+  "bugs": {
+    "url": "https://github.com/selemondev/vscode-auto-extension-manager/issues",
+    "email": "selemonsrdev@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "vscode-extensions",
+    "vscode",
+    "extensions"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "icon": "./src/images/icon.png",
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "check.deps",
+        "title": "Check"
+      },
+      {
+        "command": "test.extensions",
+        "title": "Test extension IDS"
+      }
+    ]
+  },
+  "scripts": {
+    "install:all": "pnpm install",
+    "build": "tsup ./src/extension.ts --external=vscode, --clean",
+    "vscode:prepublish": "pnpm build",
+    "dev": "pnpm build -- --watch",
+    "lint": "eslint --cache ./src --ext .ts --fix",
+    "package": "vsce package --no-dependencies",
+    "publish:release": "vsce publish --no-dependencies",
+    "publish:pre": "vsce publish --pre-release --no-dependencies",
+    "release": "pnpm build && npx changelogen --release --push && pnpm publish:release",
+    "prerelease": "pnpm build && npx changelogen --prerelease --push && pnpm publish:pre"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.87.0",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "pkg-types": "^1.0.3"
+  }
+}
