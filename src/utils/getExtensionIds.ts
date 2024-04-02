@@ -17,8 +17,7 @@ export const getExtensionIds: Record<string, { extensionIds: string[] }> = {
     'react': {
         extensionIds: [
             'rodrigovallades.es7-react-js-snippets',
-            'houssaineamzil.next-js-snippets',
-            "dbaeumer.vscode-eslint"
+            'houssaineamzil.next-js-snippets'
         ]
     },
 
