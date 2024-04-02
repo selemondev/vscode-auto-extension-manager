@@ -28,16 +28,7 @@
   "icon": "./src/images/icon.png",
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "check.deps",
-        "title": "Check"
-      },
-      {
-        "command": "test.extensions",
-        "title": "Test extension IDS"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "install:all": "pnpm install",
