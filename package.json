@@ -1,8 +1,9 @@
 {
   "name": "vscode-auto-extension-manager",
+  "version": "0.0.0",
   "displayName": "vscode-auto-extension-manager",
   "description": "Automatically manage your VSCode extensions ✨",
-  "version": "0.0.0",
+  "publisher": "Selemondev",
   "repository": {
     "type": "git",
     "url": "https://github.com/selemondev/vscode-auto-extension-manager"
