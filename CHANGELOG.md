@@ -4,6 +4,18 @@ All notable changes to the "vscode-auto-extension-manager" extension will be doc
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.2
+
+[compare changes](https://github.com/selemondev/vscode-auto-extension-manager/compare/v0.0.1...v0.0.2)
+
+### 🩹 Fixes
+
+- Unintentional removal of the extension ([2aabd2d](https://github.com/selemondev/vscode-auto-extension-manager/commit/2aabd2d))
+
+### ❤️ Contributors
+
+- Selemondev <selemondev@selemondev.local>
+
 ## v0.0.1
 
 
