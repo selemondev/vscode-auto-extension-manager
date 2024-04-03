@@ -33,7 +33,7 @@
   },
   "scripts": {
     "install:all": "pnpm install",
-    "build": "tsup ./src/extension.ts --external=vscode, --clean",
+    "build": "tsup",
     "vscode:prepublish": "pnpm build",
     "dev": "pnpm build -- --watch",
     "lint": "eslint --cache ./src --ext .ts --fix",
