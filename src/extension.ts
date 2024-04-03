@@ -36,6 +36,10 @@ const manageExtensions = async () => {
 	const extensionIds = getProjectExtensionIds(dependencies);
 	extensionsToInstall = extensionIds.filter((ext: string) => !installedExtensions.includes(ext));
 	extensionsToUninstall = installedExtensions.filter((ext) => !extensionIds.includes(ext));
+
+	if(extensionsToUninstall.includes('selemondev.vscode-preview-docs')) {
+		extensionsToUninstall = extensionsToUninstall.filter((ext) => ext !== 'selemondev.vscode-preview-docs');
+	}
 	if(extensionsToUninstall.length){
 		uninstallExtensions();
 	};
