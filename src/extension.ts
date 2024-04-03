@@ -37,8 +37,8 @@ const manageExtensions = async () => {
 	extensionsToInstall = extensionIds.filter((ext: string) => !installedExtensions.includes(ext));
 	extensionsToUninstall = installedExtensions.filter((ext) => !extensionIds.includes(ext));
 
-	if(extensionsToUninstall.includes('selemondev.vscode-preview-docs')) {
-		extensionsToUninstall = extensionsToUninstall.filter((ext) => ext !== 'selemondev.vscode-preview-docs');
+	if(extensionsToUninstall.includes('selemondev.vscode-auto-extension-manager')) {
+		extensionsToUninstall = extensionsToUninstall.filter((ext) => ext !== 'selemondev.vscode-auto-extension-manager');
 	}
 	if(extensionsToUninstall.length){
 		uninstallExtensions();
