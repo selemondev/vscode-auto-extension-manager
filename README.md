@@ -13,6 +13,8 @@ Auto Extension Manager:
 
 3. You can check the [Get Extension Ids](./src/utils/getExtensionIds.ts) file to see how the extension Ids are configured depending on the dependency.
 
+4. Use it as a template to configure your own favourite VSCode extensions and deploy it or contribute to the project to include your favourite VSCode extensions.
+
 ### How to contribute?
 
 Contributions are welcome and encouraged! If you have any ideas or suggestions for new features, or if you encounter any bugs or issues, please open an issue or submit a pull request on the GitHub repository. 
