@@ -2,7 +2,7 @@
   "name": "vscode-auto-extension-manager",
   "version": "0.0.5",
   "displayName": "vscode-auto-extension-manager",
-  "description": "Automatically manage your VSCode extensions ✨",
+  "description": "Automatically manage your VSCode extensions ✨.",
   "publisher": "Selemondev",
   "repository": {
     "type": "git",
