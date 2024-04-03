@@ -4,6 +4,18 @@ All notable changes to the "vscode-auto-extension-manager" extension will be doc
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.4
+
+[compare changes](https://github.com/selemondev/vscode-auto-extension-manager/compare/v0.0.2...v0.0.4)
+
+### 🏡 Chore
+
+- Add tsup configuration ([0fa337a](https://github.com/selemondev/vscode-auto-extension-manager/commit/0fa337a))
+
+### ❤️ Contributors
+
+- Selemon Dev <selemon@nathandigital.com>
+
 ## v0.0.2
 
 [compare changes](https://github.com/selemondev/vscode-auto-extension-manager/compare/v0.0.1...v0.0.2)
