@@ -18,6 +18,9 @@
   "categories": [
     "Other"
   ],
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vscode-extensions",
     "vscode",
