@@ -1,7 +1,6 @@
 export const getExtensionIds: Record<string, { extensionIds: string[] }> = {
     "vue": {
         extensionIds: [
-            "antfu.theme-vitesse",
             "vue.volar",
             "vue.vscode-typescript-vue-plugin",
             "rendiokriza.vue-3-code-snippets"
@@ -72,5 +71,6 @@ export const commonExtensions = [
     "wix.vscode-import-cost",
     "christian-kohler.npm-intellisense",
     "vscode-icons-team.vscode-icons",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "antfu.theme-vitesse"
 ];
